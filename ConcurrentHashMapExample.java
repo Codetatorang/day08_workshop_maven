@@ -4,8 +4,6 @@ import java.util.Enumeration;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import javax.swing.JComboBox.KeySelectionManager;
-
 public class ConcurrentHashMapExample {
     public void example(){
         Map<String, Integer> laptops = new ConcurrentHashMap<>();
