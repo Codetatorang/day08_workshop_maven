@@ -55,12 +55,4 @@ public class CollectionSortExample {
 
         System.out.println(employees);
     }
-
-    public static void main(String[]args){
-        //debugging
-        CollectionSortExample CSE = new CollectionSortExample();
-        //CSE.example();
-        CSE.example2();
-        
-    }
 }

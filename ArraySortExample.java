@@ -20,9 +20,4 @@ public class ArraySortExample {
         //sort array in descending order
         Arrays.sort(name,Collections.reverseOrder());
     }
-
-    public static void main(String[]args){
-        ArraySortExample A = new ArraySortExample();
-        A.example();
-    }
 }
