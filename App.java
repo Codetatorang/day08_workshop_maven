@@ -1,7 +1,6 @@
 package sg.edu.nus.iss;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.List;
 
@@ -45,13 +44,13 @@ public final class App {
         }
 
         //write to data.txt file using fileoutputstream
-        FileOutputStream fos = new FileOutputStream(newFile,true);
-        for(int i =0; i<10; i++){
-            char str[] = Integer.toString(i).toCharArray();
+        // FileOutputStream fos = new FileOutputStream(newFile,true);
+        // for(int i =0; i<10; i++){
+        //     char str[] = Integer.toString(i).toCharArray();
 
-            fos.write(str[0]);
-            fos.write('\n');
-        }
+        //     fos.write(str[0]);
+        //     fos.write('\n');
+        // }
 
         // String welcomeMessage = "welcome to ISS TFIP programme";
 
@@ -75,5 +74,8 @@ public final class App {
         CSVWriter cw = new CSVWriter();
         List<Employee> employeeList = cw.generateEmployees();
         cw.writeToCSV(employeeList, dirPath + File.separator + fileEmployees);
+
+        CSVReader cr = new CSVReader();
+        cr.ReadCSV(dirPath + File.separator + fileEmployees);
     }
 }

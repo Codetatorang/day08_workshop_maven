@@ -1,4 +1,4 @@
 staffNo,fullName,department,role,emailAddress,salary
-12345,SS,Dionne,SS,Advisor,test1@gmail.com,20000
-12345,SS,Gionne,SS,Advisor,test2@gmail.com,10000
-12345,SS,Fionne,SS,Advisor,test3@gmail.com,15000
+12345,Dionne,SS, role,test1@gmail.com,20000
+12345,Gionne,SS, role,test2@gmail.com,10000
+12345,Fionne,SS, role,test3@gmail.com,15000
