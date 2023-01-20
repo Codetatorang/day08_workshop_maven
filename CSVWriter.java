@@ -42,22 +42,7 @@ public class CSVWriter {
         //read records ro wby row and write it to the file using fw.append()
 
         for (Employee e: employees) {
-            // fw.append(e.getStaffNo().toString());
-            // fw.append(COMMA_DELIMITER);
-            // fw.append(e.getDepartment());
-            // fw.append(COMMA_DELIMITER);
-            // fw.append(e.getFullName());
-            // fw.append(COMMA_DELIMITER);
-            // fw.append(e.getDepartment());
-            // fw.append(COMMA_DELIMITER);
-            // fw.append(e.getRole());
-            // fw.append(COMMA_DELIMITER);
-            // fw.append(e.getEmailAddress());
-            // fw.append(COMMA_DELIMITER);
-            // fw.append(e.getSalary().toString());
-            // fw.append(NEWLINE_SEPERATOR);
             fw.append(e.toString()+ '\n');
-
         }
 
         //flush and close the file writer

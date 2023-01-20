@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+import javax.print.event.PrintEvent;
+
 /**
  * Hello world!
  */
@@ -76,6 +78,8 @@ public final class App {
         cw.writeToCSV(employeeList, dirPath + File.separator + fileEmployees);
 
         CSVReader cr = new CSVReader();
-        cr.ReadCSV(dirPath + File.separator + fileEmployees);
+        List<Employee> empList = cr.ReadCSV2(dirPath + File.separator + fileEmployees);
+        System.out.println(empList.toString());
+
     }
 }
